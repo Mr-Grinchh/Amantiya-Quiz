@@ -592,8 +592,8 @@ export default function Home() {
         <div className='min-h-screen flex-col flex justify-center items-center w-full border-[6px] border-white'>
           <div className='w-5/6 h-full p-8 flex justify-end items-center flex-col'>
             <img src={Logo.src} className='h-32'/>
-            <h1 className='text-3xl text-center'>Dank jewel voor het invullen van de test.</h1>
-            <h1 className='text-2xl text-center'>Je ontvangt binnen nu en 30 minuten de resultaten in je mailbox.</h1>
+            <h1 className='text-3xl text-center'>Bedankt voor het maken van onze Burn out test.</h1>
+            <h1 className='text-2xl text-center'>Je ontvangt van ons binnen elke minuten een email met de volledige uitslag.</h1>
           </div>
         </div>
         : <div className='min-h-screen flex-col flex justify-center items-center p-0 border-[6px] border-white'>
