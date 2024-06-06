@@ -634,10 +634,10 @@ export default function Home() {
           </div>
           <div className='flex justify-start w-5/12 lg:w-full items-start flex-col'>
             <h1 className='text-5xl w-full text-start'>Burn out Test</h1>
-            <h1 className='text-xl w-full text-start'>Doe de test en zie wat wij je kunnen vertellen over jouw situatie. Je krijgt van ons direct Antwoord.</h1>
+            <h1 className='text-xl w-full text-start'>Doe de test en zie wat wij je kunnen vertellen over jouw situatie. Je krijgt van ons direct antwoord.</h1>
             <ul className='text-xl ml-4 mt-8 list-disc'>
-              <li>Of dit eeg burn-out is. </li>
-              <li className='mt-2'>Zo ja, wat voor short Burn-out</li>
+              <li>Of je een Burn out hebt. </li>
+              <li className='mt-2'>Zo ja, wat voor soort Burn out</li>
               <li className='mt-2'>Over je energielevel</li>
             </ul>
             <button onClick={()=>{setPage('How')}} className='mt-8 border-[1px] border-buttonBorder transition duration-500 hover:bg-buttonBgHover bg-button text-text rounded-[1px] px-10 py-2'>
