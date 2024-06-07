@@ -592,8 +592,8 @@ export default function Home() {
         <div className='mx-24 lg:mx-4 flex-col flex justify-center items-center w-9/12 border-[20px] border-white'>
           <div className='w-5/6 h-full p-8 flex justify-end items-center flex-col'>
             <img src={Logo.src} className='h-32 mb-8'/>
-            <h1 className='text-3xl text-center'>Dank jewel voor het invullen van de test.</h1>
-            <h1 className='text-2xl text-center'>Je ontvangt binnen nu en 30 minuten de resultaten in je mailbox.</h1>
+            <h1 className='text-3xl text-center'>Bedankt voor het maken van onze Burn out test.</h1>
+            <h1 className='text-2xl text-center'>U ontvangt van ons binnen elke minuten een email met de volledige uitslag.</h1>
           </div>
         </div>
         : <div className='min-h-screen mx-24 lg:mx-4 flex-col flex justify-center items-center p-8 border-[20px] border-white'>
@@ -637,22 +637,22 @@ export default function Home() {
           </div>
           <div className='flex justify-start w-8/12 lgo:pl-8 lg:w-full items-start flex-col'>
             <h1 className='text-5xl w-full text-start'>Burn out Test</h1>
-            <h1 className='text-xl w-full text-start'>Doe de test en zie wat wij je kunnen vertellen over jouw situatie. Je krijgt van ons direct Antwoord.</h1>
+            <h1 className='text-xl w-full text-start'>Doe de test en zie wat wij je kunnen vertellen over jouw situatie.<br> Je krijgt van ons direct antwoord.</h1>
             <ul className='text-xl ml-4 mt-8 list-disc'>
-              <li>Of dit eeg burn-out is. </li>
-              <li className='mt-2'>Zo ja, wat voor short Burn-out</li>
+              <li> Heb ik een Burn out? </li>
+              <li className='mt-2'>Zo ja, wat voor soort Burn out.</li>
               <li className='mt-2'>Over je energielevel</li>
             </ul>
             <button onClick={()=>{setPage('How')}} className='mt-8 border-[1px] border-buttonBorder transition duration-500 hover:bg-buttonBgHover bg-button text-text rounded-[1px] px-10 py-2'>
-              Start Test
+              Start test
             </button>
             <h1 className='text-md mt-4'>De test duurt circa 10 minuten</h1>
           </div>
         </div> : page == 'How' ? 
         
         <div className='flex-col flex justify-center w-9/12 items-center lg:items-start border-[20px] p-8 border-white'>
-          <h1 className='text-5xl text-start w-full lg:text-3xl lg:text-start lg:w-full'>Hoe de Test werkt</h1>          
-          <h1 className='text-xl mt-2 text-start w-full lg:w-full lg:text-start'>Antwoordmogelijkheden zijn cijfers tussen 1 en 10, cijfer 10 is volledig waar en cijfer 1 is volledig niet waar of cijfer 10 is hoge energie en 1 zeer lage energie.<br/>Test en gradeer iedere bewering met je eerste gevoel en het eerste cijfer wat binnenvalt zet je neer. Niet twijfelen en terugkijken, dat geeft alleen verwarring.</h1>
+          <h1 className='text-5xl text-start w-full lg:text-3xl lg:text-start lg:w-full'>Hoe de test werkt</h1>          
+          <h1 className='text-xl mt-2 text-start w-full lg:w-full lg:text-start'>Antwoordmogelijkheden zijn cijfers tussen 1 en 10, cijfer 10 is volledig waar en cijfer 1 is volledig niet waar of cijfer 10 is hoge energie en 1 zeer lage energie.<br/> <br/> Test en gradeer iedere bewering met je eerste gevoel en het eerste cijfer wat binnenvalt zet je neer. Niet twijfelen en terugkijken, dat geeft alleen verwarring.</h1>
           <div className='flex items-start justify-start flex-row w-full'>
             <button onClick={()=>{setPage('Quiz')}} className='mt-4 self-start border-[1px] border-buttonBorder transition duration-500 hover:bg-buttonBgHover bg-button text-text rounded-[1px] px-10 py-2'>
               Verder
