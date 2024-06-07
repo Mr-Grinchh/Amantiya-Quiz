@@ -552,7 +552,7 @@ export default function Home() {
       </div>
       <div className='min-h-screen flex flex-col justify-center w-full items-center lg:px-0'>
         {page == 'Quiz' && result.algemeenGrads == -1 ?
-        <div className='flex-col flex justify-center items-center w-5/12 lg:w-full border-[20px] border-white'>
+        <div className='flex-col flex justify-center w-9/12 items-center lg:items-start border-[20px] p-8 border-white' style={{ height: '492px', overflow: 'auto' }}>
           <div className='p-8 flex justify-center items-center flex-col'>
             <button className='mt-4 border-[1px] border-buttonBorder hover:cursor-default bg-button text-text rounded-[1px] p-2 px-3 text-lg'>
               {question + 1}/{questions.length}
