@@ -97,38 +97,39 @@ function energyLevel(questions: Question[]): EnergyLevels {
 
 export function getResults(questions: Array<Question>): Result {
     // Getting energy Levels
-    const energyLevels = energyLevel(questions)
+    const energyLevels = energyLevel(questions);
     // Initialization
     let result: Result = {  
         algemeenGrads: 0,
         type: 'Geen Burn out',
         energyLevel: energyLevels
-    }
-    if (energyLevels.energielevel <= 2.8 && energyLevels.energielevel >= 2.2) {
+    };
+
+    if (energyLevels.energielevel >= 2.2 && energyLevels.energielevel <= 2.8) {
         result.algemeenGrads = 1;
         result.type = 'De Overload Burnout';
-    } else if (energyLevels.energielevel <= 2.2 && energyLevels.energielevel > 1.6) {
+    } else if (energyLevels.energielevel > 1.6 && energyLevels.energielevel <= 2.2) {
         result.algemeenGrads = 2;
-        // Specific checks for 2e graads types
-        if (energyLevels.focus < 1.5 && energyLevels.hyper < 1.5) {
+        // Specific checks for 2e graads types with inclusive comparisons
+        if (energyLevels.focus <= 1.5 && energyLevels.hyper <= 1.5) {
             result.type = 'De Chaotic/Hypersensitive Burnout';
-        } else if (energyLevels.focus < 1.5) {
+        } else if (energyLevels.focus <= 1.5) {
             result.type = 'De Chaotic Burnout';
-        } else if (energyLevels.hyper < 1.5) {
+        } else if (energyLevels.hyper <= 1.5) {
             result.type = 'De Hypersensitive Burnout';
         }
     } else if (energyLevels.energielevel <= 1.5) {
         result.algemeenGrads = 3;
-        // Specific checks for 3e graads types
-        if (energyLevels.energiereserves < 1.5 && energyLevels.blokkade < 1) {
+        // Specific checks for 3e graads types with inclusive comparisons
+        if (energyLevels.energiereserves <= 1.5 && energyLevels.blokkade <= 1) {
             result.type = 'De Burnout/Rockbottom Shutdown';
-        } else if (energyLevels.blokkade < 1) {
+        } else if (energyLevels.blokkade <= 1) {
             result.type = 'De Burnout Shutdown';
-        } else if (energyLevels.energiereserves < 1.5) {
+        } else if (energyLevels.energiereserves <= 1.5) {
             result.type = 'De Rockbottom Burnout';
         }
     }
 
     return result;
-
 }
+
